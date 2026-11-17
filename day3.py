@@ -55,14 +55,13 @@ print(*colors)            # red green blue
 print(*colors, sep=", ")   # red, green, blue
 
 # Iterating with index (enumerate)
-for idx, item in enumerate(colors):
-    print(f"Index {idx}: {item}")
+for idx, item in enumerate(colors, start=1):
+    print(f"Item {idx}: {item}")
 
 '''Bonus Tip: Starting the Count at 1
 If you want human-friendly numbering (1, 2, 3 instead of 0, 1, 2), pass start=1:
 
 Python
-
 
 for idx, item in enumerate(colors, start=1):
     print(f"Item #{idx}: {item}")
