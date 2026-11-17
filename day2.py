@@ -30,9 +30,12 @@ num2 = nums[1:4]
 print(num2)
 
 name = "Srijoni"
+print(name)
 list2 = list(name)
+print(list2)
 print(len(list2))
 listr = list2[::-1]
+print(listr)
 str1 = ''.join(listr)
 print(str1) #inojirs
 print(id(str1))
