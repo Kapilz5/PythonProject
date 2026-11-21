@@ -41,9 +41,13 @@ point1 = [10, 20, 30]
 a,b,c = point1
 print(a,b,c)
 # Extended Unpacking using Asterisk (*)
-first, *middle, last = (1, 2, 3, 4, 5, 6)
+first1, *middle1, last1 = (1, 2, 3, 4, 5, 6)
+print(first1)   # 1
+print(middle1)  # [2, 3, 4] (Extracted as a list)
+print(last1)    # 5
+
+first, *_, last = (1, 2, 3, 4, 5, 6)
 print(first)   # 1
-print(middle)  # [2, 3, 4] (Extracted as a list)
 print(last)    # 5
 
 #Swapping Variables without Temp Variable
@@ -68,3 +72,5 @@ print(sum(t))                # 14
 print(sorted(t))             # Returns a NEW sorted LIST: [1, 2, 2, 2, 3, 4]
 
 #Immutability Edge Cases & Concatenation
+
+#hash()
